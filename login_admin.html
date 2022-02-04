@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gerencias</title>
+    <link rel="stylesheet" href="css/login_admin.css">
+    <link rel="shortcut icon" href="img/hotel.png" type="image/x-icon">
+
+</head>
+<body>
+    <main>
+        <header>
+            <nav>
+                <a href="index.php"><b>Pagina Principal</b></a>
+    
+            </nav>
+            <section class="textos-header">
+                <h1>HOSPEDAJE CASA ROGEL</h1>
+                <h2>La mejor opcion, para tu descanso</h2>
+            </section>
+            <div class="wave" style="height: 100px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                    style="height: 100%; width: 100%;">
+                    <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                        style="stroke: none; fill: #fff;"></path>
+                </svg></div>
+        </header>
+        <section class="login-contenedor">
+            <h2 class="titulo"><u>POR FAVOR INGRESA TUS DATOS PARA PODER INGRESAR</u></h2>
+
+                <div class="login-page">
+                    <div class="form">
+                        <img src="img/mariposa.svg" alt="">
+                      <form class="login-form" method="POST" action="conexion/login_admin.php">
+                        <input type="text"  name="admin" placeholder="USUARIO"/>
+                        <input type="password"  name="password" placeholder="CONTRASEÑA"/>
+                        <div class="alert"> <?php echo isset($alert)? $alert: '';?> </div>
+                        <button type="submit">INGRESAR</button>
+                        <br>
+                      </form>
+                      <br>
+                    </div>
+                  </div>
+        </section>
+    </main>
+      
+<footer>
+    <div class="contenedor-footer">
+        <div class="content-foo">
+            <h4>Telefono</h4>
+            <p>786-114-1737</p>
+            <p>786-105-1140</p>
+        </div>
+        <div class="content-foo">
+            <h4>Correo</h4>
+            <p>info@casarogelhospedaje.mx</p>
+        </div>
+        <div class="content-foo">
+            <h4>Direccion</h4>
+            <p>Aldama 3, Centro, 61290 <br> Senguio, Mich.</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
